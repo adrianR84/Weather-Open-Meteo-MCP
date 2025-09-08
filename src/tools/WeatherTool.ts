@@ -57,7 +57,7 @@ export async function handler(
 
   try {
     // Step 1: Get location key
-    const locationUrl = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${encodeURIComponent(location)}`;
+    const locationUrl = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${encodeURIComponent(location)}`;
     const locationResp = await axios.get(locationUrl);
 
     if (!locationResp.data || locationResp.data.length === 0) {
@@ -67,7 +67,7 @@ export async function handler(
     const locationKey = locationResp.data[0].Key;
 
     // Step 2: Get forecast with location key
-    const forecastUrl = `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey}&metric=${units === "metric" ? "true" : "false"}`;
+    const forecastUrl = `https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey}&metric=${units === "metric" ? "true" : "false"}`;
     const forecastResp = await axios.get(forecastUrl);
     const data = forecastResp.data;
 

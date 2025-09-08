@@ -56,7 +56,7 @@ const dailyWeatherTool: Tool = {
 const server = new Server(
   {
     name: "mcp-weather",
-    version: "0.4.0", // Removed sessionId requirement
+    version: "0.4.2",
   },
   {
     capabilities: {
