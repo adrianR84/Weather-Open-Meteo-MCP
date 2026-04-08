@@ -36,7 +36,7 @@ For integration with Claude Desktop or other MCP-compatible clients, add this to
   "mcpServers": {
     "weather": {
       "command": "npx",
-      "args": ["-y", "@adrianR84/mcp-weather"]
+      "args": ["-y", "@adrianR84/Weather-Open-Meteo-MCP"]
     }
   }
 }
@@ -82,7 +82,7 @@ This MCP server allows large language models (like Claude) to access real-time w
 1. **Clone this repository:**
 
    ```bash
-   git clone https://github.com/adrianR84/mcp-weather.git
+   git clone https://github.com/adrianR84/Weather-Open-Meteo-MCP.git
    cd mcp-weather
    ```
 
@@ -109,7 +109,7 @@ This MCP server allows large language models (like Claude) to access real-time w
      "mcpServers": {
        "weather": {
          "command": "npx",
-         "args": ["-y", "@timlukahorstmann/mcp-weather"]
+         "args": ["-y", "@adrianR84/Weather-Open-Meteo-MCP"]
        }
      }
    }
@@ -135,7 +135,7 @@ This MCP server allows large language models (like Claude) to access real-time w
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request to [adrianR84/mcp-weather](https://github.com/adrianR84/mcp-weather).
+Contributions are welcome! Please feel free to submit a Pull Request to [adrianR84/Weather-Open-Meteo-MCP](https://github.com/adrianR84/Weather-Open-Meteo-MCP).
 
 ## Future Enhancements
 
@@ -147,17 +147,6 @@ We're always looking to improve the MCP Weather Server. Here are some features w
 - **Historical Weather Data:** Access to past weather conditions.
 
 If you have ideas for other features, feel free to open an issue!
-
-## Changelog
-
-### 0.4.0
-
-- Removed `sessionId` requirement from all tools as it was not used for anything internally
-- This simplifies integrations and reduces confusion for LLM usage
-
-### 0.3.0 and earlier
-
-- Initial releases with basic functionality
 
 ## License
 
