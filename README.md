@@ -6,6 +6,10 @@ A Model Context Protocol (MCP) server that provides hourly and daily weather for
 
 This project is a fork of the original [MCP Weather Server](https://github.com/TimLukaHorstmann/mcp-weather) by [Tim Luka Horstmann](https://github.com/TimLukaHorstmann). The original version used AccuWeather API, and this fork has been migrated to use Open-Meteo API to provide free weather data access without API keys.
 
+## NPM Package
+
+Available on npm as [weather-open-meteo-mcp](https://www.npmjs.com/package/weather-open-meteo-mcp).
+
 ---
 
 ## Quick Start
@@ -15,13 +19,13 @@ No API key required! Open-Meteo provides free access to weather data for non-com
 Simply run the MCP Weather server directly with:
 
 ```bash
-npx -y @adrianR84/Weather-Open-Meteo-MCP
+npx -y weather-open-meteo-mcp
 ```
 
 Or, for HTTP/REST access via [supergateway](https://github.com/supercorp-ai/supergateway):
 
 ```bash
-npx -y supergateway --stdio "npx -y @adrianR84/Weather-Open-Meteo-MCP" \
+npx -y supergateway --stdio "npx -y weather-open-meteo-mcp" \
   --port 4004 \
   --baseUrl http://127.0.0.1:4004 \
   --ssePath /messages \
@@ -40,7 +44,7 @@ For integration with Claude Desktop or other MCP-compatible clients, add this to
   "mcpServers": {
     "weather": {
       "command": "npx",
-      "args": ["-y", "@adrianR84/Weather-Open-Meteo-MCP"]
+      "args": ["-y", "weather-open-meteo-mcp"]
     }
   }
 }
@@ -122,7 +126,7 @@ This MCP server allows large language models (like Claude) to access real-time w
      "mcpServers": {
        "weather": {
          "command": "npx",
-         "args": ["-y", "@adrianR84/Weather-Open-Meteo-MCP"]
+         "args": ["-y", "weather-open-meteo-mcp"]
        }
      }
    }
