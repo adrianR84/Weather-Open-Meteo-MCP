@@ -1,6 +1,6 @@
 {
-  "name": "@adrianR84/Weather-Open-Meteo-MCP",
-  "version": "0.4.2",
+  "name": "@adrianR84/weather-open-meteo-mcp",
+  "version": "0.1.0",
   "bin": {
     "mcp-weather": "./build/index.js"
   },
