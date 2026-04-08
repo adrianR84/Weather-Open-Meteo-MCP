@@ -76,6 +76,7 @@ This MCP server allows large language models (like Claude) to access real-time w
 ## Prerequisites
 
 - Node.js ≥18
+- pnpm (recommended) or npm
 
 ## Setup
 
@@ -87,6 +88,14 @@ This MCP server allows large language models (like Claude) to access real-time w
    ```
 
 2. **Install dependencies:**
+
+   Using pnpm (recommended):
+
+   ```bash
+   pnpm install
+   ```
+
+   Or using npm:
 
    ```bash
    npm install
@@ -127,11 +136,13 @@ This MCP server allows large language models (like Claude) to access real-time w
 
 ## Development
 
-- Install dev dependencies: `npm install`
-- Lint your code: `npm run lint`
-- Build: `npm run build`
-- Run tests: `npm test`
-- Start in dev mode: `npm run dev`
+- Install dev dependencies: `pnpm install`
+- Lint your code: `pnpm run lint`
+- Build: `pnpm run build`
+- Run tests: `pnpm test`
+- Start in dev mode: `pnpm run dev`
+
+_(You can also use `npm` instead of `pnpm` if preferred)_
 
 ## Contributing
 
