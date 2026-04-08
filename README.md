@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides hourly and daily weather forecasts using the Open-Meteo API.
 
+## Acknowledgment
+
+This project is a fork of the original [MCP Weather Server](https://github.com/TimLukaHorstmann/mcp-weather) by [Tim Luka Horstmann](https://github.com/TimLukaHorstmann). The original version used AccuWeather API, and this fork has been migrated to use Open-Meteo API to provide free weather data access without API keys.
+
 ---
 
 ## Quick Start
