@@ -2,7 +2,7 @@
   "name": "weather-open-meteo-mcp",
   "version": "0.1.0",
   "bin": {
-    "mcp-weather": "./build/index.js"
+    "weather-open-meteo-mcp": "./build/index.js"
   },
   "description": "MCP server that provides hourly and daily weather forecasts using Open-Meteo API",
   "type": "module",
