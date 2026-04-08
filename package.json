@@ -1,10 +1,10 @@
 {
-  "name": "@timlukahorstmann/mcp-weather",
+  "name": "@adrianR84/Weather-Open-Meteo-MCP",
   "version": "0.4.2",
   "bin": {
     "mcp-weather": "./build/index.js"
   },
-  "description": "MCP server that provides hourly and daily weather forecasts using the AccuWeather API",
+  "description": "MCP server that provides hourly and daily weather forecasts using Open-Meteo API",
   "type": "module",
   "main": "build/index.js",
   "scripts": {
@@ -37,22 +37,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TimLukaHorstmann/mcp-weather.git"
+    "url": "git+https://github.com/adrianR84/Weather-Open-Meteo-MCP.git"
   },
   "keywords": [
     "mcp",
     "weather",
-    "accuweather",
+    "open-meteo",
     "llm",
     "ai"
   ],
-  "author": "Tim Luka Horstmann",
+  "author": "adrianR84",
   "license": "MIT",
   "directories": {
     "test": "tests"
   },
   "bugs": {
-    "url": "https://github.com/TimLukaHorstmann/mcp-weather/issues"
+    "url": "https://github.com/adrianR84/Weather-Open-Meteo-MCP/issues"
   },
-  "homepage": "https://github.com/TimLukaHorstmann/mcp-weather#readme"
+  "homepage": "https://github.com/adrianR84/Weather-Open-Meteo-MCP#readme"
 }
