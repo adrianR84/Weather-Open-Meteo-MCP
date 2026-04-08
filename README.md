@@ -1,16 +1,16 @@
 # MCP Weather Server
 
-[![npm version](https://img.shields.io/npm/v/@timlukahorstmann/mcp-weather)](https://www.npmjs.com/package/@timlukahorstmann/mcp-weather)
-[![license](https://img.shields.io/github/license/TimLukaHorstmann/mcp-weather)](https://github.com/TimLukaHorstmann/mcp-weather/blob/main/LICENSE)
-[![node version](https://img.shields.io/node/v/@timlukahorstmann/mcp-weather)](https://www.npmjs.com/package/@timlukahorstmann/mcp-weather)
-[![issues](https://img.shields.io/github/issues/TimLukaHorstmann/mcp-weather)](https://github.com/TimLukaHorstmann/mcp-weather/issues)
-[![weekly downloads](https://img.shields.io/npm/dm/@timlukahorstmann/mcp-weather)](https://www.npmjs.com/package/@timlukahorstmann/mcp-weather)
-[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/TimLukaHorstmann/mcp-weather)](https://archestra.ai/mcp-catalog/timlukahorstmann__mcp-weather)
+[![npm version](https://img.shields.io/npm/v/@adrianR84/mcp-weather)](https://www.npmjs.org/package/@adrianR84/mcp-weather)
+[![license](https://img.shields.io/github/license/adrianR84/mcp-weather)](https://github.com/adrianR84/mcp-weather/blob/main/LICENSE)
+[![node version](https://img.shields.io/node/v/@adrianR84/mcp-weather)](https://www.npmjs.org/package/@adrianR84/mcp-weather)
+[![issues](https://img.shields.io/github/issues/adrianR84/mcp-weather)](https://github.com/adrianR84/mcp-weather/issues)
+[![weekly downloads](https://img.shields.io/npm/dm/@adrianR84/mcp-weather)](https://www.npmjs.org/package/@adrianR84/mcp-weather)
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/adrianR84/mcp-weather)](https://archestra.ai/mcp-catalog/adrianR84__mcp-weather)
 
 <p align="center">
   <img src="logo.png" alt="MCP Weather Server Logo" width="250"/>
-  <a href="https://glama.ai/mcp/servers/@TimLukaHorstmann/mcp-weather">
-    <img width="380" height="200" src="https://glama.ai/mcp/servers/@TimLukaHorstmann/mcp-weather/badge" alt="Weather MCP server" />
+  <a href="https://glama.ai/mcp/servers/@adrianR84/mcp-weather">
+    <img width="380" height="200" src="https://glama.ai/mcp/servers/@adrianR84/mcp-weather/badge" alt="Weather MCP server" />
   </a>
 </p>
 
@@ -25,13 +25,13 @@ No API key required! Open-Meteo provides free access to weather data for non-com
 Simply run the MCP Weather server directly with:
 
 ```bash
-npx -y @timlukahorstmann/mcp-weather
+npx -y @adrianR84/mcp-weather
 ```
 
 Or, for HTTP/REST access via [supergateway](https://github.com/supercorp-ai/supergateway):
 
 ```bash
-npx -y supergateway --stdio "npx -y @timlukahorstmann/mcp-weather" \
+npx -y supergateway --stdio "npx -y @adrianR84/mcp-weather" \
   --port 4004 \
   --baseUrl http://127.0.0.1:4004 \
   --ssePath /messages \
@@ -96,7 +96,7 @@ This MCP server allows large language models (like Claude) to access real-time w
 1. **Clone this repository:**
 
    ```bash
-   git clone https://github.com/TimLukaHorstmann/mcp-weather.git
+   git clone https://github.com/adrianR84/mcp-weather.git
    cd mcp-weather
    ```
 
@@ -149,7 +149,7 @@ This MCP server allows large language models (like Claude) to access real-time w
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request to [adrianR84/mcp-weather](https://github.com/adrianR84/mcp-weather).
 
 ## Future Enhancements
 
