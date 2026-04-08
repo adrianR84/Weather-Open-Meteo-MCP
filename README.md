@@ -14,22 +14,15 @@
   </a>
 </p>
 
-A Model Context Protocol (MCP) server that provides hourly and daily weather forecasts using the AccuWeather API.
+A Model Context Protocol (MCP) server that provides hourly and daily weather forecasts using the Open-Meteo API.
 
 ---
 
 ## Quick Start
 
-You need an AccuWeather API key (free tier available).  
-[Sign up here](https://developer.accuweather.com/) and create an app to get your key.
+No API key required! Open-Meteo provides free access to weather data for non-commercial use.
 
-Export your API key as an environment variable:
-
-```bash
-export ACCUWEATHER_API_KEY=your_api_key_here
-```
-
-Then run the MCP Weather server directly with:
+Simply run the MCP Weather server directly with:
 
 ```bash
 npx -y @timlukahorstmann/mcp-weather
@@ -43,8 +36,7 @@ npx -y supergateway --stdio "npx -y @timlukahorstmann/mcp-weather" \
   --baseUrl http://127.0.0.1:4004 \
   --ssePath /messages \
   --messagePath /message \
-  --cors "*" \
-  --env ACCUWEATHER_API_KEY="$ACCUWEATHER_API_KEY"
+  --cors "*"
 ```
 
 ---
@@ -58,10 +50,7 @@ For integration with Claude Desktop or other MCP-compatible clients, add this to
   "mcpServers": {
     "weather": {
       "command": "npx",
-      "args": ["-y", "@timlukahorstmann/mcp-weather"],
-      "env": {
-        "ACCUWEATHER_API_KEY": "your_api_key_here"
-      }
+      "args": ["-y", "@timlukahorstmann/mcp-weather"]
     }
   }
 }
@@ -82,6 +71,7 @@ This MCP server allows large language models (like Claude) to access real-time w
 ## Available Tools
 
 ### Hourly Weather Forecast
+
 - Tool name: `weather-get_hourly`
 - Provides hourly forecasts for the next 12 hours
 - Parameters:
@@ -89,6 +79,7 @@ This MCP server allows large language models (like Claude) to access real-time w
   - `units` (optional): "metric" (Celsius, default) or "imperial" (Fahrenheit)
 
 ### Daily Weather Forecast
+
 - Tool name: `weather-get_daily`
 - Provides daily forecasts for up to 15 days
 - Parameters:
@@ -98,32 +89,24 @@ This MCP server allows large language models (like Claude) to access real-time w
 
 ## Prerequisites
 
-- Node.js ≥18  
-- An AccuWeather API key (set via `.env` or your shell)
+- Node.js ≥18
 
 ## Setup
 
 1. **Clone this repository:**
+
    ```bash
    git clone https://github.com/TimLukaHorstmann/mcp-weather.git
    cd mcp-weather
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
-3. **Get an AccuWeather API key:**
-   - Register at [AccuWeather API](https://developer.accuweather.com/)
-   - Create a new app and obtain an API key
-
-4. **Create a `.env` file with your API key:**
-   ```
-   ACCUWEATHER_API_KEY=your_api_key_here
-   ```
-
-5. **Build the project:**
+3. **Build the project:**
    ```bash
    npm run build
    ```
@@ -140,10 +123,7 @@ This MCP server allows large language models (like Claude) to access real-time w
      "mcpServers": {
        "weather": {
          "command": "npx",
-         "args": ["-y", "@timlukahorstmann/mcp-weather"],
-         "env": {
-           "ACCUWEATHER_API_KEY": "your_api_key_here"
-         }
+         "args": ["-y", "@timlukahorstmann/mcp-weather"]
        }
      }
    }
@@ -162,10 +142,10 @@ This MCP server allows large language models (like Claude) to access real-time w
 ## Development
 
 - Install dev dependencies: `npm install`
-- Lint your code:           `npm run lint`  
-- Build:                    `npm run build`  
-- Run tests:                `npm test`
-- Start in dev mode:        `npm run dev`
+- Lint your code: `npm run lint`
+- Build: `npm run build`
+- Run tests: `npm test`
+- Start in dev mode: `npm run dev`
 
 ## Contributing
 
@@ -176,8 +156,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 We're always looking to improve the MCP Weather Server. Here are some features we're considering for future releases:
 
 - **Extended Hourly Forecasts:** Beyond 12 hours, e.g., 24 or 48 hours.
-- **Weather Alerts:** Integration with AccuWeather's severe weather alerts API.
-- **Location Autocomplete:** Improved location searching with autocomplete suggestions.
+- **Weather Alerts:** Integration with severe weather alerts.
+- **Location Autocomplete:** Enhanced location searching with autocomplete suggestions.
 - **Historical Weather Data:** Access to past weather conditions.
 
 If you have ideas for other features, feel free to open an issue!
@@ -185,10 +165,12 @@ If you have ideas for other features, feel free to open an issue!
 ## Changelog
 
 ### 0.4.0
+
 - Removed `sessionId` requirement from all tools as it was not used for anything internally
 - This simplifies integrations and reduces confusion for LLM usage
 
 ### 0.3.0 and earlier
+
 - Initial releases with basic functionality
 
 ## License
