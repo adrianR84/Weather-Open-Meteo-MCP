@@ -1,19 +1,5 @@
 # MCP Weather Server
 
-[![npm version](https://img.shields.io/npm/v/@adrianR84/mcp-weather)](https://www.npmjs.org/package/@adrianR84/mcp-weather)
-[![license](https://img.shields.io/github/license/adrianR84/mcp-weather)](https://github.com/adrianR84/mcp-weather/blob/main/LICENSE)
-[![node version](https://img.shields.io/node/v/@adrianR84/mcp-weather)](https://www.npmjs.org/package/@adrianR84/mcp-weather)
-[![issues](https://img.shields.io/github/issues/adrianR84/mcp-weather)](https://github.com/adrianR84/mcp-weather/issues)
-[![weekly downloads](https://img.shields.io/npm/dm/@adrianR84/mcp-weather)](https://www.npmjs.org/package/@adrianR84/mcp-weather)
-[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/adrianR84/mcp-weather)](https://archestra.ai/mcp-catalog/adrianR84__mcp-weather)
-
-<p align="center">
-  <img src="logo.png" alt="MCP Weather Server Logo" width="250"/>
-  <a href="https://glama.ai/mcp/servers/@adrianR84/mcp-weather">
-    <img width="380" height="200" src="https://glama.ai/mcp/servers/@adrianR84/mcp-weather/badge" alt="Weather MCP server" />
-  </a>
-</p>
-
 A Model Context Protocol (MCP) server that provides hourly and daily weather forecasts using the Open-Meteo API.
 
 ---
@@ -25,13 +11,13 @@ No API key required! Open-Meteo provides free access to weather data for non-com
 Simply run the MCP Weather server directly with:
 
 ```bash
-npx -y @adrianR84/mcp-weather
+npx -y @adrianR84/Weather-Open-Meteo-MCP
 ```
 
 Or, for HTTP/REST access via [supergateway](https://github.com/supercorp-ai/supergateway):
 
 ```bash
-npx -y supergateway --stdio "npx -y @adrianR84/mcp-weather" \
+npx -y supergateway --stdio "npx -y @adrianR84/Weather-Open-Meteo-MCP" \
   --port 4004 \
   --baseUrl http://127.0.0.1:4004 \
   --ssePath /messages \
@@ -50,7 +36,7 @@ For integration with Claude Desktop or other MCP-compatible clients, add this to
   "mcpServers": {
     "weather": {
       "command": "npx",
-      "args": ["-y", "@timlukahorstmann/mcp-weather"]
+      "args": ["-y", "@adrianR84/mcp-weather"]
     }
   }
 }
